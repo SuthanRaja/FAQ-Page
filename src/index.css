@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'worksans';
+    src: url(./assets/font/WorkSans-VariableFont_wght.ttf) format(truetype),
+        url(./assets/font/WorkSans-Italic-VariableFont_wght.ttf) format(truetype);
+}
