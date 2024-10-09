@@ -5,13 +5,11 @@ import minusIcon from '../assets/icon-minus.svg';
 function Expand({ title, children }) {
 
     const [isActive, setIsActive] = useState(false);
-
-    const expand = () => setIsActive(!isActive);
     
     return (
         <div className='m-5'>
 
-            <div className="flex justify-between items-center cursor-pointer" onClick={expand}>
+            <div className="flex justify-between items-center cursor-pointer" onClick={()=> setIsActive(!isActive)}>
 
                 <span className='text-md md:text-l font-semibold'>{title}</span>
                 <img src={isActive ? minusIcon : plusIcon} className='ml-2' />
